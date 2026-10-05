@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome To My Personal Website(中转站镜像充值）</title>
+    <title>Welcome To My Personal Website(中转站镜像充值 In Home-web)</title>
     <style>
         *{
             margin:0;
             padding:0;
             box-sizing:border-box;
-            font-family:system-ui, -apple-system, sans-serif;
+            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
         }
         body{
-            background-color:#0f172a;
+            background-color:#050a16;
             color:#e2e8f0;
             min-height:100vh;
             display:flex;
@@ -20,29 +20,74 @@
             align-items:center;
             justify-content:center;
             padding:2rem;
+            background-image: 
+                radial-gradient(rgba(56, 189, 248,0.08) 1px, transparent 1px);
+            background-size:30px 30px;
         }
+        /* 顶部主标题 */
         h1{
-            font-size:2.2rem;
+            font-size:2.4rem;
             margin-bottom:1.2rem;
             color:#ffffff;
             text-align:center;
+            letter-spacing:2px;
+            text-shadow: 0 0 12px #38bdf8;
         }
         .link-text{
-            font-size:1.25rem;
-            margin-bottom:2rem;
+            font-size:1.3rem;
+            margin-bottom:2.5rem;
         }
         a{
             color:#38bdf8;
             text-decoration:none;
+            transition: all 0.3s ease;
         }
         a:hover{
+            text-shadow:0 0 8px #38bdf8;
             text-decoration:underline;
         }
-        .tips{
-            max-width:650px;
-            line-height:1.7;
-            font-size:1rem;
+        .container{
+            max-width:700px;
+            border: 1px solid rgba(56,189,248,0.2);
+            border-radius:12px;
+            padding:2rem;
+            background:rgba(15,23,42,0.65);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(56,189,248,0.12);
+        }
+        .title-line{
+            color:#94a3b8;
+            font-size:1.1rem;
+            margin-bottom:1rem;
+            border-left:3px solid #38bdf8;
+            padding-left:12px;
+        }
+        .content p{
+            line-height:1.8;
             color:#cbd5e1;
+            margin-bottom:0.8rem;
+        }
+        .skill-list{
+            display:flex;
+            flex-wrap:wrap;
+            gap:10px;
+            margin-top:1.2rem;
+        }
+        .skill-tag{
+            border:1px solid rgba(56,189,248,0.4);
+            padding:6px 14px;
+            border-radius:99px;
+            font-size:0.9rem;
+            color:#7dd3fc;
+            transition:0.3s;
+        }
+        .skill-tag:hover{
+            background:rgba(56,189,248,0.15);
+        }
+        .footer-text{
+            margin-top:2rem;
+            font-size:0.85rem;
+            color:#64748b;
             text-align:center;
         }
     </style>
@@ -52,11 +97,34 @@
     <div class="link-text">
         Please point to <a href=" ">https://njzqhy.top/login</a >
     </div>
-    <div class="tips">
-        <p>Navigation Tips:</p >
-        <p>• This page is a personal showcase space.</p >
-        <p>• All resources are arranged for reference and learning.</p >
-        <p>• Feel free to browse and explore the content.</p >
+
+    <div class="container">
+        <div class="title-line">About Me</div>
+        <div class="content">
+            <p>I am a robotics engineering student, fascinated by control theory, circuit design and programming.</p >
+            <p>Focused on exploring automation, embedded systems and intelligent algorithms.</p >
+        </div>
+
+        <div class="title-line">Core Skills</div>
+        <div class="skill-list">
+            <span class="skill-tag">C / C++</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Circuit Simulation</span>
+            <span class="skill-tag">Microcontroller</span>
+            <span class="skill-tag">Control Theory</span>
+            <span class="skill-tag">Mathematical Modeling</span>
+        </div>
+
+        <div class="title-line">Navigation Tips</div>
+        <div class="content">
+            <p>• This is my personal showcase space for learning and project display.</p >
+            <p>• All content is for study & academic reference only.</p >
+            <p>• Feel free to browse and explore my portfolio.</p >
+        </div>
+    </div>
+
+    <div class="footer-text">
+        © 2026 All Rights Reserved
     </div>
 </body>
 </html>
